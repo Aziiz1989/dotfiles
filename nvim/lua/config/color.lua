@@ -1,0 +1,3 @@
+--require('tokyonight').setup({})
+--require('tokyonight-day').setup({})
+--require("catppuccin").setup({})
