@@ -1,8 +1,10 @@
 (module config.plugin.lspconfig
   {autoload {nvim aniseed.nvim
              lsp lspconfig
+             ;; coq coq 
+             ;; coq-3p coq_3p}})
              cmplsp cmp_nvim_lsp}})
-
+             
 
 ;; gutter icons for lsp diagnostics
 ;; :help vim.lsp.diagnostic.set_signs
@@ -39,7 +41,7 @@
                 (vim.lsp.with
                  vim.lsp.handlers.signature_help
                  {:border "single"})}
-      capabilities (cmplsp.default_capabilities)
+      capabilities (cmplsp.default_capabilities) 
       on_attach (fn [client bufnr]
                   (do
                     (nvim.buf_set_keymap bufnr :n :gd "<Cmd>lua vim.lsp.buf.definition()<CR>" {:noremap true})

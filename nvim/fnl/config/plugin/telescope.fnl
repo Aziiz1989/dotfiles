@@ -18,7 +18,8 @@
                 :tele_tabby {:use_highlighter false}
                 :packer {}
                 :project {:sync_with_nvim_tree true}}
-   :pickers {:find_files {:find_command ["rg" "--files" "--iglob" "!.git"]}}})
+   :pickers {:find_files {:find_command ["rg" "--files" "--iglob" "!.git"]}
+             :colorscheme {:enable_preview true}}})
 
 ;; Load Extensions
 
@@ -26,7 +27,7 @@
 (telescope.load_extension "env")
 
 ;; List headings with preview in markdown, asciidoc, etc.
-(telescope.load_extension "heading")
+;; (telescope.load_extension "heading")
 
 ;; File browsing - create files and directories
 (telescope.load_extension "file_browser")
@@ -40,14 +41,17 @@
 ;; List network ports currently in use
 (telescope.load_extension "ports")
 
+;; list colorschemes
+;; (telescope.load_extension "colorscheme")
+
 ;; Create, delete and switch between projects - setting path
-(telescope.load_extension "project")
+;; (telescope.load_extension "project")
 
 ;; List currently open tabs and switch between them
-(telescope.load_extension "tele_tabby")
+;; (telescope.load_extension "tele_tabby")
 
 ;; Terraform
-(telescope.load_extension "terraform_doc")
+;; (telescope.load_extension "terraform_doc")
 
 
 (telescope.load_extension "ui-select")
