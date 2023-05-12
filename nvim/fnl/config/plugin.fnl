@@ -42,6 +42,11 @@
 
   :HiPhish/nvim-ts-rainbow2 {}
 
+
+  ;; git stuff 
+
+  :tpope/vim-fugitive {}
+  :APZelos/blamer.nvim {}
 ;; copilot 
   :github/copilot.vim {}
                        ;; :mod :copilot-cmp}
@@ -107,6 +112,7 @@
  :overcache/NeoSolarized {}
  ;;add nightfox colorscheme 
  :EdenEast/nightfox.nvim {}
+
  ;; :Iron-E/nvim-highlite {:branch "master-v3"}
  ;; :Th3Whit3Wolf/one-nvim {}
 

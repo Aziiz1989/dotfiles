@@ -11,7 +11,7 @@
 (set nvim.g.maplocalleader ",")
 (nvim.set_keymap :t :<esc><esc> "<c-\\><c-n>" {:noremap true})
 (util.lnnoremap :. "ToggleTerm")
-(vim.cmd "colorscheme duskfox")
+(vim.cmd "colorscheme newpaper")
 (util.lnnoremap :fd ":Telescope file_browser path=%:p:h select_buffer=true")
 (util.lnnoremap :cs "w | ConjureEval (nextjournal.clerk/show! (str *file*))")
 (util.lnnoremap :bb ":Telescope buffers")
