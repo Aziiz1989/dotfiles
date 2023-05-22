@@ -79,6 +79,7 @@
        ;; show line numbers
        ;; :number true
        :relativenumber true
+       :number true
        ;show line and column number
        :ruler true
        ;settings needed for compe autocompletion
