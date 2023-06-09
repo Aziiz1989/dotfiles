@@ -15,5 +15,6 @@ SPACESHIP_PROMPT_ORDER=(
         dir
         host 
         git 
+        hg
         java 
 )

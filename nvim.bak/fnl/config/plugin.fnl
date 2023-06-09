@@ -42,11 +42,6 @@
 
   :HiPhish/nvim-ts-rainbow2 {}
 
-
-  ;; git stuff 
-
-  :tpope/vim-fugitive {}
-  :APZelos/blamer.nvim {}
 ;; copilot 
   :github/copilot.vim {}
                        ;; :mod :copilot-cmp}
@@ -60,14 +55,6 @@
                                :hrsh7th/cmp-nvim-lsp
                                :PaterJason/cmp-conjure]
                     :mod :cmp}
-
-  ;; add coq 
-  ;; :ms-jpq/coq_nvim {:branch "coq"}
-  ;;
-  ;; :ms-jpq/coq.thirdparty {:branch "3p"}
-  ;;
-  ;; :ms-jpq/coq.artifacts {:branch "artifacts"}
-
   ;; lsp server
  :neovim/nvim-lspconfig {:branch "master"
                          :mod :lspconfig}
@@ -95,7 +82,7 @@
               :nvim-telescope/telescope-ui-select.nvim]
    :mod :telescope}
 
- :L3MON4D3/LuaSnip {:requires [:saadparwaiz1/cmp_luasnip]}
+  :L3MON4D3/LuaSnip {:requires [:saadparwaiz1/cmp_luasnip]}
 
    ;;themes 
   :startup-nvim/startup.nvim
@@ -110,9 +97,6 @@
  {:requires [:kyazdani42/nvim-web-devicons]}
  
  :overcache/NeoSolarized {}
- ;;add nightfox colorscheme 
- :EdenEast/nightfox.nvim {}
-
  ;; :Iron-E/nvim-highlite {:branch "master-v3"}
  ;; :Th3Whit3Wolf/one-nvim {}
 

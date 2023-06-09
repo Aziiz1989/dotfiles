@@ -11,11 +11,10 @@
 (set nvim.g.maplocalleader ",")
 (nvim.set_keymap :t :<esc><esc> "<c-\\><c-n>" {:noremap true})
 (util.lnnoremap :. "ToggleTerm")
-(vim.cmd "colorscheme newpaper")
+(vim.cmd "colorscheme github_light")
 (util.lnnoremap :fd ":Telescope file_browser path=%:p:h select_buffer=true")
 (util.lnnoremap :cs "w | ConjureEval (nextjournal.clerk/show! (str *file*))")
-(util.lnnoremap :bb ":Telescope buffers")
-(util.lnnoremap :cc ":Telescope colorscheme")
+
 ;;; copilot 
 
 (set vim.g.copilot_no_tab_map false)
@@ -61,10 +60,6 @@
 ;; Line settings - don't wrap lines
 (nvim.ex.set :nowrap)
 
-;; wrap lines in markedown files automatically 
-(nvim.ex.autocmd "BufRead,BufNewFile" "*.md" "setlocal" "textwidth=80")
-;; (nvim.ex.autocmd "FileType" "markdown" "setlocal textwidth=80 wrap")
-
 (let [options
       {
        :encoding "utf-8"
@@ -79,7 +74,6 @@
        ;; show line numbers
        ;; :number true
        :relativenumber true
-       :number true
        ;show line and column number
        :ruler true
        ;settings needed for compe autocompletion

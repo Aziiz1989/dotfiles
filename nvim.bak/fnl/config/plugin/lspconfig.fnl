@@ -1,10 +1,8 @@
 (module config.plugin.lspconfig
   {autoload {nvim aniseed.nvim
              lsp lspconfig
-             ;; coq coq 
-             ;; coq-3p coq_3p}})
              cmplsp cmp_nvim_lsp}})
-             
+
 
 ;; gutter icons for lsp diagnostics
 ;; :help vim.lsp.diagnostic.set_signs
@@ -41,7 +39,7 @@
                 (vim.lsp.with
                  vim.lsp.handlers.signature_help
                  {:border "single"})}
-      capabilities (cmplsp.default_capabilities) 
+      capabilities (cmplsp.default_capabilities)
       on_attach (fn [client bufnr]
                   (do
                     (nvim.buf_set_keymap bufnr :n :gd "<Cmd>lua vim.lsp.buf.definition()<CR>" {:noremap true})
@@ -52,7 +50,7 @@
                     (nvim.buf_set_keymap bufnr :n :<leader>ln "<cmd>lua vim.lsp.buf.rename()<CR>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>le "<cmd>lua vim.diagnostic.open_float()<CR>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>lq "<cmd>lua vim.diagnostic.setloclist()<CR>" {:noremap true})
-                    (nvim.buf_set_keymap bufnr :n :<leader>lf "<cmd>lua vim.lsp.buf.format()<CR>" {:noremap true})
+                    (nvim.buf_set_keymap bufnr :n :<leader>lf "<cmd>lua vim.lsp.buf.formatting()<CR>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>lj "<cmd>lua vim.diagnostic.goto_next()<CR>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>lk "<cmd>lua vim.diagnostic.goto_prev()<CR>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>la "<cmd>lua vim.lsp.buf.code_action()<CR>" {:noremap true})
